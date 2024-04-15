@@ -1,0 +1,24 @@
+{
+  "name": "Better Schoology",
+  "description": "My Extension",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Better Schoology"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "popup.js"
+      ],
+      "matches": [
+        "https://schoology.d214.org/*"
+      ]
+    }
+  ]
+}
